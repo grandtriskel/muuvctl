@@ -1,6 +1,6 @@
 # muuvctl
 
-Control muuv tables with an command line tool
+Control muuv tables with a command line tool
 
 ## Wiring
 
@@ -14,7 +14,7 @@ Control muuv tables with an command line tool
 
 ### Using controller while USB plugged in
 
-The basic wiring has the disadvantage that only the UART-Controller can control the table and the muuv-device is disfunctional. It can be fixed with an relay connected to `RTS` line of the UART which breaks the `RX` line. It is important that the relay is high trigger.
+The basic wiring has the disadvantage that only the UART-Controller can control the table. The muuv-device is disfunctional. This can be fixed with a relay connected to `RTS` line of the UART which breaks the `RX` line. It is important that the relay is high trigger.
 
 ![](./doc/relay-circuit.png)
 
@@ -29,7 +29,7 @@ pip install .
 ```
 pip install --user .
 ```
-In order to run `muuvctl` from commandline, make sure that `/home/$USER/.local/bin` is in your `$PATH`
+In order to run `muuvctl` from the command line, make sure that `/home/$USER/.local/bin` is in your `$PATH`
 
 ### Bash completion
 
